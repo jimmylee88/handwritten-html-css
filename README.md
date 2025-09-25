@@ -1,4 +1,4 @@
-# handwritten-html-css
+# Portfolio Project
 Project using hand written HTML &amp; CSS fundamentals
 
 ## Situation & Task
