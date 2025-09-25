@@ -10,19 +10,29 @@
     --section-margin-bottom: 80px;
 }
 
+/* Div to contain the logo, doesn't stay sticky at top with nav when scrolling down */
+.logobar {
+    width: 100%;
+    background-color: var(--secondary-bg);
+    text-align: center;
+    padding-top: 16px;
+}
+
 nav {
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 16px;
+    padding: 8px 0 8px 0;
     background-color: var(--secondary-bg);
     text-align: center;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1);;
+    /* z-index stops weird bug with article cards overlapping sticky nav bar */
+    z-index: 10;
 }
 
 .nav-links a {
     display: inline-block;
-    padding: 8px 8px;
+    padding: 8px 24px;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -129,6 +139,8 @@ h3 {
 span.role:before {
     content: "✏️";
     margin-right: 16px;
+    display: inline-block;
+    transform: scaleX(-1);
 }
 
 span.location:before {
