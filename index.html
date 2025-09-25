@@ -9,7 +9,7 @@
 
 <body>
     <nav>
-        <img src="./assets/images/JL_bird_logo_dark 2.webp" alt="animated bird logo" width="60px"/><br>
+        <img class="logo" src="./assets/images/JL_bird_logo_dark 2.webp" alt="animated bird logo" width="60px"/>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -27,18 +27,11 @@
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <img class="profile-pic" src="./assets/images/mii.jpg" alt="Potrait of Jimmy Lee, as a Nintendo Mii cartoon" width="300px"/>
-            <div class="profile-text">
-            <p>I hail from a background as a designer, working for a decade across various digital and innovation projects for public service.</p>
-            <p>Cuurently I'm trying to skill up, and learning how to become a web developer with <a href="https://www.step8up.co.uk">Step8Up</a>.</p></div>
-            
-        </section>
 
         <section id="projects">
             <h2>My Work</h2>
-            <p>Some examples of my experiments in p5.js on OpenProcessing, from a workshop earlier this year with Foli London.</p>
+            <hr>
+            <p>Some examples of my experiments in p5.js on OpenProcessing, from a workshop earlier this year with Mehmet Erk of Foli London.</p>
         <article>
             <img class="proj-tn" src="./assets/images/pixelmap_tn.jpg" alt="project image - pixel mapping experiment"/>
             <h3>Altered Reality</h3>
@@ -69,12 +62,30 @@
              <h3>Robot Hop</h3>
             <p class="caption">Simple loop of a colour changing circle that draws it's path</p>
         </article>
+        <article>
+            <img class="proj-tn" src="./assets/images/spree.jpg" alt="project image - smiley spree"/>
+             <h3>Smiley Spree</h3>
+            <p class="caption">Animated loop of multiple smileys using for loops</p>
+        </article>
+        <article>
+            <img class="proj-tn" src="./assets/images/slinky-type.jpg" alt="project image - slinky type"/>
+             <h3>Robot Hop</h3>
+            <p class="caption">Multiple loops of a colour changing circles to form the word "loop"</p>
+        </article>
         </section>
    
+    <section id="about">
+            <h2>About Me</h2><hr>
+            <img class="profile-pic" src="./assets/images/mii.jpg" alt="Potrait of Jimmy Lee, as a Nintendo Mii cartoon" width="300px"/>
+            <div class="profile">
+            <p class="profile-text">I hail from a background as a designer, working for a decade across various digital and innovation projects for public service.</p>
+            <p class="profile-text">Currently I'm trying to skill up, and learning how to become a web developer with <a href="https://www.step8up.co.uk">Step8Up</a>.</p></div>
+            
+        </section>
 
     <section id="contact">
-        <h2>Get in touch</h2>
-        <p>Leave me a message</p>
+        <h2>Get in touch</h2><hr>
+        <p>Please contact me if you'd like to collaborate on a project, or discuss anything I've worked on previously</p>
         <form action="submit.php" method="post">
 
         <label for="username">Your Name</label><br>
@@ -83,31 +94,20 @@
         <label for="email">Email Address</label><br>
         <input type="email" id="email"><br>
 
-        <label for="phone">Phone Number</label><br>
-        <input type="tel" id="phone"><br>
-
         <label for="message">Your Message</label><br>
         <textarea name="message" rows="10" cols="30" placeholder="Enter your message here"></textarea><br>
-
-        <input type="checkbox" id="design-msg" name="design-msg" value="Design">
-        <label for="design-msg">Enquire about design</label><br>
-
-        <input type="checkbox" id="dev-msg" name="dev-msg" value="Development">
-        <label for="dev-msg">Enquire about web development</label><br>
-
-        <input type="checkbox" id="other-msg" name="other-msg" value="Misc">
-        <label for="other-msg">Something else</label><br>
 
         <button>Submit Message</button>
 
         </form>
-
-        <p>You can also find me here:</p>
+        <div class="social-links">
+        <span class="social">You can also find me here:</span>
         <ul>
-            <li><a href="mailto:jimlee.dev@gmail.com">Email</a></li>
-            <li><a href="tel:+440712345678">Phone</a></li>
-            <li><a href="https://www.linkedin.com/in/mrjimelee/">LinkedIn</a></li>
+            <li class="email-link"><a href="mailto:jimlee.dev@gmail.com">Email</a></li>
+            <li class="phone-link"><a href="tel:+440712345678">Phone</a></li>
+            <li class="linkedin-link"><a href="https://www.linkedin.com/in/mrjimelee/">LinkedIn</a></li>
         </ul>
+        </div>
     </section>
 
     </main>
