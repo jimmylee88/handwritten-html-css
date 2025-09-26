@@ -1,6 +1,8 @@
 # Portfolio Project
 Project using hand written HTML &amp; CSS fundamentals
 
+Demo link: https://jimmylee88.github.io/html-css-portfolio/ 
+
 ## Situation & Task
 Task was to create a portfolio or personal profile page, using basic HTML & CSS that we've learnt during the first week of our course.
 
@@ -19,3 +21,6 @@ I'm fairly happy with my results.
 There does seem to be a weird bug, where hovering over an article card causes it to overlap the sticky nav when you scroll down. Managed to fix this bug by adding a z-index value to the sticky nav, so that it appears on top of elements that used `display: inline-block` (article cards & mirrored pencil emoji).
 
 There are some quirks with horizontally centering parts of the page that I would like to tweak too, but I know using flexbox would make this a lot easier. Managed to get to a point where I'm satisfied with the layout, despite not using flexbox or grid for true responsiveness and scaling for mobile screen sizes.
+
+If I had more time to work on it, I would probably try to include a dark mode option.
+CSS Variables would make this a lot easier, but I need to figure out how to achieve this conditionally based on user preference via a media query.
