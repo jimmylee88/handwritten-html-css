@@ -4,7 +4,7 @@
     --secondary-bg: #ffffff;
     --header-text: #ffffff;
     --text-color: #3c3c3c;
-    --page-padding: 24px 48px;
+    --page-padding: 24px 24px;
     /* gradient for looping header background */
     --linear-gradient: linear-gradient(-45deg, #ab7dc6, #637cc0, #23a6d5, #23d5ab);
     --section-margin-bottom: 80px;
@@ -47,10 +47,6 @@ nav {
 .nav-links a:active {
     font-weight: 700;
     color: var(--primary-color);
-}
-
-html {
-    margin: 0 auto;
 }
 
 body {
