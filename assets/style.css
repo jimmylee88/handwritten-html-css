@@ -10,6 +10,11 @@
     --section-margin-bottom: 80px;
 }
 
+/* Smooth scroll when using nav links */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Div to contain the logo, doesn't stay sticky at top with nav when scrolling down */
 .logobar {
     width: 100%;
